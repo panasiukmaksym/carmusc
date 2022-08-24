@@ -1,0 +1,289 @@
+@import 'fonts';
+
+$red-color:  #DB3138;
+
+* {
+    color: #FFF;
+    font-style: normal;
+    font-weight: normal;
+    transition: 0.6s all;
+}
+
+body {
+    background: #141414;
+}
+
+@keyframes buttonPain {
+    0% {
+        background: linear-gradient(to right, $red-color 0% 65%, transparent 65% 100%);
+    }
+    25% {
+        background: linear-gradient(to right, $red-color 0% 75%, transparent 75% 100%);
+    }
+    50% {
+        background: linear-gradient(to right, $red-color 0% 85%, transparent 85% 100%);
+    }
+    75% {
+        background: linear-gradient(to right, $red-color 0% 95%, transparent 95% 100%);
+    }   
+    100% {
+        background: linear-gradient(to right, $red-color 0% 100%, transparent 100% 100%);
+    }
+}
+
+.container {
+    width: 1296px;
+    margin: 0 auto;
+}
+
+.four-dotes {
+    width: 150px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+    .dote {
+        width: 10px;
+        height: 10px;
+        background: $red-color;
+        transform: rotate(-45deg);
+    }
+}
+
+.button {
+    padding: 15px 25px;
+    font-family: 'ReformaGroteskDemiC';
+    font-size: 24px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    // background: url(../icons/button-bg.png) center center/50% 50% no-repeat;
+    // background-size: 50%;
+    background: linear-gradient(to right, $red-color 0% 65%, transparent 65% 100%);
+    width: 170px;
+    margin: 0 auto;
+    &:hover {
+        // background: linear-gradient(to right, $red-color 0% 100%, transparent 100% 100%);
+        animation-name: buttonPain;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+.header {
+    height: 1000px;
+    background: url(../images/first-screen-bg.png);
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .nav {
+        width: 1296px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__links {
+            display: flex;
+            justify-content: flex-start;
+            gap: 40px;
+        }
+        &__item {
+            font-family: 'ReformaGroteskMediumC';
+            font-size: 24px;
+            line-height: 120%;
+            letter-spacing: 0.03em;
+        }
+        &__menu {
+            cursor: pointer;
+        }
+    }
+    &__title {
+        font-family: 'ReformaGroteskBoldC';
+        font-size: 150px;
+        line-height: 125%;
+        color: $red-color;
+        text-align: center;
+        padding-top: 40px;
+    }
+    .four-dotes {
+        margin-top: 10px;
+    }
+    &__text {
+        width: 440px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: 'ReformaGroteskMediumC';
+        font-size: 40px;
+        line-height: 120%;
+    }
+    &__button {
+        margin-top: 40px;
+        cursor: pointer;
+    }
+    &__footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 213px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #898989;
+        border-bottom: 1px solid #898989;
+        &:nth-child(2) {
+            border: 1px solid #898989;
+        }
+    }
+    &__subtitle {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__info {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $red-color;
+        margin-bottom: 15px;
+        width: 265px;
+    }
+}
+
+.achievements {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        padding: 180px 0px;
+    }
+    &__left {
+        width: 636px;
+    }
+    &__title {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 52px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    .four-dotes {
+        margin-left: 0px;
+    }
+    &__text {
+        font-family: 'ReformaGroteskMediumC';
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+    }
+    &__right {
+        width: 638px;
+        display: flex;
+        flex: 0 0 0;
+    }
+    &__left-side {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #898989;
+        margin-bottom: 40px;
+    }
+    &__card {
+        width: 318px;
+        height: 177px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #898989;
+        &:nth-child(4) {
+            border-bottom: none;
+            max-height: 177px;
+        }
+    }
+    &__right-side {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #898989;
+        margin-top: 40px;
+    }
+    &__number {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: $red-color;
+        margin-bottom: 22px;
+        span {
+            font-size: 50px;
+            color: $red-color;
+        }
+    }
+    &__info {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        width: 277px;
+    }
+}
+
+.slider {
+    width: 1660px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 180px;
+    &__left-button {
+        img {
+            transform: rotate(180deg);
+        }
+    }
+    &__block {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    &__card {
+        width: 416px;
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    &__table {
+        width: 366px;
+        height: 70px;
+        background: $red-color;
+        position: absolute;
+        top: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &__text {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        width: 286px;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
