@@ -63,6 +63,7 @@ body {
     background: linear-gradient(to right, $red-color 0% 65%, transparent 65% 100%);
     width: 170px;
     margin: 0 auto;
+    cursor: pointer;
     &:hover {
         // background: linear-gradient(to right, $red-color 0% 100%, transparent 100% 100%);
         animation-name: buttonPain;
@@ -240,6 +241,17 @@ body {
     }
 }
 
+.left-button {
+    cursor: pointer;
+    img {
+        transform: rotate(180deg);
+    }
+}
+
+.right-button {
+    cursor: pointer;
+}
+
 .slider {
     width: 1660px;
     margin: 0 auto;
@@ -247,11 +259,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 180px;
-    &__left-button {
-        img {
-            transform: rotate(180deg);
-        }
-    }
     &__block {
         display: flex;
         justify-content: center;
@@ -286,4 +293,301 @@ body {
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+.advantages {
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        gap: 134px;
+    }
+    &__right {
+        width: 636px;
+        img {
+            width: 100%;
+        }
+    }
+    &__left {
+        width: 526px;
+    }
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-family: 'ReformaGroteskMediumC';
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+    }
+}
+
+.article {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__text {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 18px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+
+.services {
+    padding-top: 180px;
+    &__title {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 52px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    &__btn {
+        padding: 20px 40px 10px 40px;
+        background: $red-color;
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        cursor: pointer;
+        &:nth-child(2) {
+            background: none;
+        }
+    }
+    &__block {
+        padding-top: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card {
+        width: 306px;
+        border: 1px solid #898989;
+        padding: 80px 40px 50px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__subtitle {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 24px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin: 20px 0px;
+    }
+    &__text {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+}
+
+.advantages-two {
+    padding-top: 180px;
+    &__block {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 134px;
+    }
+    &__right {
+        width: 636px;
+        img {
+            width: 100%;
+        }
+    }
+    &__left {
+        width: 526px;
+    }
+    &__top {
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    &__title {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 32px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__text {
+        font-family: 'ReformaGroteskMediumC';
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+    }
+}
+
+.works {
+    padding-top: 180px;
+    &__title {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 52px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__block {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 280px;
+    img {
+        width: 100%;
+    }
+    }
+}
+
+.feedback {
+    padding-top: 120px;
+    &__title {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 52px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__form {
+        padding-top: 20px;
+        width: 636px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__name, &__phone {
+        width: 306px;
+        height: 47px;
+        border: 1px solid #898989;
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 15px 25px 10px 25px;
+        background: #141414;
+    }
+    &__textarea {
+        width: 526px;
+        height: 150px;
+        margin-top: 25px;
+        border: 1px solid #898989;
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        padding: 15px 25px 10px 25px;
+        background: #141414;
+    }
+    &__aside {
+        width: 40px;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+        gap: 15px;
+        margin-top: 25px;
+    }
+    &__item {
+        border: 1px solid #898989;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 636px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__card {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+    &__descr {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    &__down {
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+    &__button {
+        margin: 0px;
+        margin-bottom: 100px;
+    }
+    &__block {
+        margin-bottom: 100px;
+    }
+}
+
+.footer {
+    padding: 35px 0px;
+    border-top: 1px solid #898989;
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text {
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 16px;
+        line-height: 140%;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.5;
+    }
+    &__links {
+        display: flex;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    &__item {
+        font-family: 'ReformaGroteskMediumC';
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+    }   
 }
