@@ -109,5 +109,5 @@ exports.images = images;
 exports.icons = icons;
 exports.cleanDist = cleanDist;
 
-exports.build = series( cleanDist, images, icons, build );
+exports.build = series( cleanDist, icons, images, build );
 exports.default = parallel( styles, browsersync, watching, scripts, pugfile );

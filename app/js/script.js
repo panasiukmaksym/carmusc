@@ -15,10 +15,10 @@ $(function(){
                 arrCardSrc[i] = "../images/slider1.png";
             }
         }
+
         $($('.slider__card img')[0]).attr('src', arrCardSrc[0]);
         $($('.slider__card img')[1]).attr('src', arrCardSrc[1]);
         $($('.slider__card img')[2]).attr('src', arrCardSrc[2]);
-
     });
 
     $('.slider .right-button').on('click', function(){
