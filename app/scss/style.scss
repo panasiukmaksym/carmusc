@@ -58,29 +58,26 @@ body {
     text-align: center;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    // background: url(../icons/button-bg.png) center center/50% 50% no-repeat;
-    // background-size: 50%;
     background: linear-gradient(to right, $red-color 0% 65%, transparent 65% 100%);
     width: 170px;
     margin: 0 auto;
     cursor: pointer;
     &:hover {
-        // background: linear-gradient(to right, $red-color 0% 100%, transparent 100% 100%);
         animation-name: buttonPain;
         animation-duration: 2s;
+        animation-timing-function: ease;
         animation-iteration-count: infinite;
     }
 }
 
 .header {
-    height: 1000px;
-    background: url(../images/first-screen-bg.png);
+    height: 100vh;
+    background: url(../images/first-screen-bg.png) center center/cover no-repeat;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     .nav {
-        width: 1296px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
@@ -591,3 +588,5 @@ body {
         letter-spacing: 0.03em;
     }   
 }
+
+@import 'media';
