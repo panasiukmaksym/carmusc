@@ -1,11 +1,51 @@
+@media( max-width: 1900px ) {
+    .slider {
+        width: 1300px;
+        &__block {
+            width: 90%;
+        }
+        &__card {
+            width: 28%;
+        }
+        &__table {
+            width: 70%;
+            top: 93%;
+        }
+    }
+}
+
 @media( max-width: 1300px ) {
-    .container {
+    .container, .slider {
         width: 960px;
+    }
+    .slider {
+        &__text {
+            font-size: 16px;
+            width: 90%;
+        }
+        &__table {
+            height: 60px;
+        }
+    }
+    .achievements {
+        &__title {
+            font-size: 36px;
+        }
+    }
+    .advantages, .advantages-two {
+        &__block {
+            gap: 30px;
+        }
+    }
+    .services {
+        &__card {
+            width: 235px;
+        }
     }
 }
 
 @media( max-width: 992px ) {
-    .container {
+    .container, .slider {
         width: 720px;
     }
     .header {
@@ -13,10 +53,49 @@
             width: 95%;
         }
     }
+    .achievements {
+        &__block {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 100px 0px;
+        }
+    }
+    .advantages, .advantages-two {
+        &__block {
+            gap: 10px;
+        }
+        &__title {
+            font-size: 24px;
+        }
+        &__right {
+            width: 450px;
+        }
+        .article {
+            &__text {
+                padding: 0px 5px;
+                font-size: 14px;
+            }
+        }
+    }
+    .services {
+        &__block {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        &__card {
+            width: 48%;
+        }
+    }
+    .footer {
+        &__links {
+            gap: 20px;
+        }
+    }
 }
 
 @media( max-width: 768px ) {
-    .container {
+    .container, .slider {
         width: 540px;
     }
     .header {
@@ -33,10 +112,70 @@
             }
         }
     }
+    .achievements {
+        &__card {
+            width: 100%;
+            padding: 10px 0px;
+        }
+        &__right {
+            width: 90%;
+            margin: 0 auto;
+        }
+        &__info {
+            width: 95%;
+        }
+        &__left {
+            width: 95%;
+        }
+    }
+    .slider {
+        &__block {
+            gap: 10px;
+        }
+        &__card {
+            width: 45%;
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+    .services {
+        &__title {
+            font-size: 40px;
+        }
+    }
+    .feedback {
+        &__title {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__form {
+            width: 95%;
+        }
+        &__name, &__phone {
+            width: 48%;
+        }
+        &__textarea {
+            width: 90%;
+        }
+        &__footer {
+            width: 95%;
+        }
+    }
+    .footer {
+        &__block {
+            flex-direction: column-reverse;
+            gap: 10px;
+        }
+        &__text {
+            text-align: center;
+        }
+    }
 }
 
 @media( max-width: 576px ) {
-    .container {
+    .container, .slider {
         width: 100%;
         padding: 0px 5px;
     }
@@ -65,6 +204,102 @@
         }
         &__footer {
             grid-auto-rows: 180px;
+        }
+    }
+    .achievements {
+        &__info {
+            font-size: 14px;
+        }
+    }
+    .slider {
+        &__card {
+            width: 90%;
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+    .advantages, .advantages-two {
+        &__block {
+            padding-top: 150px;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 50px;
+        }
+        &__left {
+            width: 90%;
+        }
+        &__right {
+            width: 90%;
+        }
+        .article {
+            padding-top: 20px;
+        }
+    }
+    .advantages-two {
+        &__block {
+            padding-top: 0px;
+        }
+    }
+    .services {
+        &__block {
+            gap: 10px;
+        }
+        &__btn {
+            font-size: 22px;
+            padding: 15px;
+        }
+        &__card {
+            padding: 40px 5px;
+        }
+        &__button {
+            font-size: 20px;
+            padding: 10px;
+            width: 90%;
+        }
+    }
+    .works {
+        &__block {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .feedback {
+        &__title {
+            width: 90%;
+            text-align: center;
+            margin: 0 auto;
+        }
+        &__form {
+            width: 95%;
+        }
+        &__name, &__phone, &__textarea {
+            width: 100%;
+        }
+        &__name {
+            margin-bottom: 20px;
+        }
+        &__aside {
+            width: 150px;
+            height: 40px;
+            flex-direction: row;
+        }
+        &__footer {
+            flex-direction: column;
+            align-items:flex-start
+        }
+        &__button {
+            margin-bottom: 20px;
+        }
+        &__down {
+            justify-content: flex-start;
+        }
+    }
+    .footer {
+        &__links {
+            display: none;
         }
     }
 }
