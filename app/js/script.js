@@ -7,12 +7,12 @@ $(function(){
         var threeCard = $($('.slider__card img')[2]).attr('src');
         var arrCardSrc = [ oneCard, twoCard, threeCard ];
         for (  var i = 0; i < 3; i++ ) {
-            if ( arrCardSrc[i][16] == '1' ) {
-                arrCardSrc[i] = "../images/slider2.png";
-            } else if ( arrCardSrc[i][16] == '2' ) {
-                arrCardSrc[i] = "../images/slider3.png";
-            } else if ( arrCardSrc[i][16] == '3' ) {
-                arrCardSrc[i] = "../images/slider1.png";
+            if ( arrCardSrc[i][13] == '1' ) {
+                arrCardSrc[i] = "images/slider2.png";
+            } else if ( arrCardSrc[i][13] == '2' ) {
+                arrCardSrc[i] = "images/slider3.png";
+            } else if ( arrCardSrc[i][13] == '3' ) {
+                arrCardSrc[i] = "images/slider1.png";
             }
         }
 
@@ -28,12 +28,12 @@ $(function(){
         var threeCard = $($('.slider__card img')[2]).attr('src');
         var arrCardSrc = [ oneCard, twoCard, threeCard ];
         for (  var i = 0; i < 3; i++ ) {
-            if ( arrCardSrc[i][16] == '1' ) {
-                arrCardSrc[i] = "../images/slider3.png";
-            } else if ( arrCardSrc[i][16] == '2' ) {
-                arrCardSrc[i] = "../images/slider1.png";
-            } else if ( arrCardSrc[i][16] == '3' ) {
-                arrCardSrc[i] = "../images/slider2.png";
+            if ( arrCardSrc[i][13] == '1' ) {
+                arrCardSrc[i] = "images/slider3.png";
+            } else if ( arrCardSrc[i][13] == '2' ) {
+                arrCardSrc[i] = "images/slider1.png";
+            } else if ( arrCardSrc[i][13] == '3' ) {
+                arrCardSrc[i] = "images/slider2.png";
             }
         }
         $($('.slider__card img')[0]).attr('src', arrCardSrc[0]);
@@ -44,37 +44,37 @@ $(function(){
 
     $('.advantages .left-button').on('click', function () {
         var oneCard = $($('.advantages__image-car img')).attr('src');
-        if ( oneCard[10] == 'b' ) {
-            $('.advantages__image-car img').attr('src', '../images/yellow-car.png');
+        if ( oneCard[7] == 'b' ) {
+            $('.advantages__image-car img').attr('src', 'images/yellow-car.png');
         } else {
-            $('.advantages__image-car img').attr('src', '../images/blue-car.png');
+            $('.advantages__image-car img').attr('src', 'images/blue-car.png');
         }
     });
 
     $('.advantages .right-button').on('click', function () {
         var oneCard = $($('.advantages__image-car img')).attr('src');
-        if ( oneCard[10] == 'b' ) {
-            $('.advantages__image-car img').attr('src', '../images/yellow-car.png');
+        if ( oneCard[7] == 'b' ) {
+            $('.advantages__image-car img').attr('src', 'images/yellow-car.png');
         } else {
-            $('.advantages__image-car img').attr('src', '../images/blue-car.png');
+            $('.advantages__image-car img').attr('src', 'images/blue-car.png');
         }
     });
 
     $('.advantages-two .left-button').on('click', function () {
         var oneCard = $($('.advantages-two__image-car img')).attr('src');
-        if ( oneCard[10] == 'b' ) {
-            $('.advantages-two__image-car img').attr('src', '../images/yellow-car.png');
+        if ( oneCard[7] == 'b' ) {
+            $('.advantages-two__image-car img').attr('src', 'images/yellow-car.png');
         } else {
-            $('.advantages-two__image-car img').attr('src', '../images/blue-car.png');
+            $('.advantages-two__image-car img').attr('src', 'images/blue-car.png');
         }
     });
 
     $('.advantages-two .right-button').on('click', function () {
         var oneCard = $($('.advantages-two__image-car img')).attr('src');
-        if ( oneCard[10] == 'b' ) {
-            $('.advantages-two__image-car img').attr('src', '../images/yellow-car.png');
+        if ( oneCard[7] == 'b' ) {
+            $('.advantages-two__image-car img').attr('src', 'images/yellow-car.png');
         } else {
-            $('.advantages-two__image-car img').attr('src', '../images/blue-car.png');
+            $('.advantages-two__image-car img').attr('src', 'images/blue-car.png');
         }
     });
 

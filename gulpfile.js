@@ -86,7 +86,7 @@ function build() {
 }
 
 function pugfile() {
-    return src('app/pug/**/*.pug')
+    return src('app/*.pug')
     .pipe(pug({
         pretty: true
     }))
@@ -97,7 +97,7 @@ function pugfile() {
 function watching() {
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/script.min.js'], scripts);
-    watch(['app/pug/**/*.pug'], pugfile);
+    watch(['app/*.pug'], pugfile);
     watch(['app/*.html']).on('change', browserSync.reload);
 }
 
